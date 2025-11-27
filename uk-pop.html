@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영국 팝 소개</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                blue: "#1fb6ff",
+                indigo: "#1a1c4e",
+                glow: "#7edfff",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 30px, 0);
+        }
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeInUp 0.9s ease forwards;
+      }
+
+      .fade-in.delay-1 {
+        animation-delay: 0.15s;
+      }
+
+      .fade-in.delay-2 {
+        animation-delay: 0.3s;
+      }
+
+      .fade-in.delay-3 {
+        animation-delay: 0.45s;
+      }
+
+      .fade-in.delay-4 {
+        animation-delay: 0.6s;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[radial-gradient(circle_at_top,_#050519,_#020617)] text-slate-100 antialiased">
+    <div class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-indigo-500/40 blur-3xl"></div>
+        <div class="absolute right-0 top-40 h-96 w-96 rounded-full bg-rose-400/30 blur-3xl"></div>
+        <div class="absolute inset-x-10 bottom-10 h-64 rounded-full bg-blue-900/40 blur-3xl"></div>
+      </div>
+      <div class="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-12">
+        <nav class="fade-in mb-4 flex w-full flex-wrap items-center justify-between rounded-3xl border border-white/15 bg-white/5 px-6 py-4 text-sm font-medium text-slate-100 shadow-[0_15px_40px_rgba(2,6,23,0.4)] backdrop-blur-2xl">
+          <div class="flex items-center gap-2 text-xs uppercase tracking-[0.4em] text-blue-200">
+            <span class="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_15px_rgba(125,211,252,0.8)]"></span>
+            GLOBAL POP GUIDE
+          </div>
+          <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+            <a href="index.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">K-POP</a>
+            <a href="us-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">미국 팝</a>
+            <a href="uk-pop.html" class="rounded-full border border-white/40 bg-white/10 px-3 py-1 text-white shadow-inner">영국 팝</a>
+            <a href="jp-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">일본 팝</a>
+            <a href="latin-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">라틴 팝</a>
+          </div>
+        </nav>
+        <header class="fade-in mx-auto w-full max-w-4xl rounded-[32px] border border-white/20 bg-white/10 p-10 shadow-[0_20px_60px_rgba(15,23,42,0.45)] backdrop-blur-3xl">
+          <div class="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-sky-200">British Pop</p>
+              <h1 class="mt-3 text-4xl font-bold text-white sm:text-5xl">UK POP Spotlight</h1>
+              <p class="mt-3 text-base text-slate-200 sm:text-lg">
+                브릿팝부터 전자 사운드까지, 실험 정신으로 진화한 영국 팝의 장면을 소개합니다.
+              </p>
+            </div>
+            <figure class="flex flex-col items-center gap-3 rounded-3xl border border-white/30 bg-white/20 p-4 shadow-inner backdrop-blur-xl">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                alt="영국 국기"
+                loading="lazy"
+                class="h-16 w-24 rounded-xl border border-white/50 bg-white object-cover shadow-lg"
+              />
+              <figcaption class="text-xs font-medium text-slate-100">United Kingdom</figcaption>
+            </figure>
+          </div>
+          <div class="mt-8 grid gap-4 text-sm text-slate-200 sm:grid-cols-3">
+            <div class="fade-in delay-1 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">핵심 키워드</p>
+              <p class="mt-2 text-lg font-semibold text-white">Britpop Legacy</p>
+            </div>
+            <div class="fade-in delay-2 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">사운드</p>
+              <p class="mt-2 text-lg font-semibold text-white">Indie · Electronica</p>
+            </div>
+            <div class="fade-in delay-3 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">플랫폼</p>
+              <p class="mt-2 text-lg font-semibold text-white">BBC · Glastonbury</p>
+            </div>
+          </div>
+        </header>
+        <section class="grid gap-8 lg:grid-cols-3">
+          <article class="fade-in delay-1 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(8,47,73,0.45)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-indigo-500/20 p-3 text-indigo-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 9l10.5-3M9 9v11.25m0-11.25L4.5 6.75m4.5 13.5L4.5 18V6.75m4.5 13.5l10.5-3V6l-10.5 3.75" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">루트 & 진화</h2>
+                <p class="text-sm text-slate-200">Beat · Britpop · Neo Soul</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-slate-200">
+              스키플과 비틀즈 열풍, 글램록, 펑크, 뉴웨이브를 거쳐 1990년대 브릿팝과 2000년대 네오 소울, 드럼앤베이스까지 꾸준히
+              새로운 장르를 개척했습니다.
+            </p>
+          </article>
+          <article class="fade-in delay-2 rounded-[32px] border border-white/15 bg-gradient-to-br from-indigo-500/30 via-blue-500/20 to-purple-400/20 p-8 shadow-[0_30px_70px_rgba(14,116,144,0.5)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-white/20 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">핵심 요소</h2>
+                <p class="text-sm text-indigo-100">Story & Attitude</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-indigo-50">
+              직설적인 가사, 사회적 풍자, 아트 스쿨 감성의 비주얼이 결합하여 개성 있는 세계관을 구축합니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-white/90">
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">BBC Introducing을 통한 신인 발굴</li>
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">밴드 사운드와 전자 음악의 융합</li>
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">아트·패션 신과의 협업</li>
+            </ul>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-sky-500/20 p-3 text-sky-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 5h12M9 3v2m9 4v12m0 0l-3-3m3 3l3-3M10 9a4 4 0 100 8 4 4 0 000-8z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">글로벌 영향력</h2>
+                <p class="text-sm text-slate-200">Brit Awards · Glastonbury</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-slate-200">
+              브릿 어워드, 머큐리 프라이즈, 글래스톤베리 페스티벌이 세계 음악 팬들의 기준점을 제시합니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="rounded-2xl bg-white/5 p-3">런던 사운드 시스템 문화의 확장</li>
+              <li class="rounded-2xl bg-white/5 p-3">유럽 투어 허브로서의 영향력</li>
+              <li class="rounded-2xl bg-white/5 p-3">패션위크와 연계된 공연</li>
+            </ul>
+          </article>
+        </section>
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="fade-in delay-2 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(2,6,23,0.6)] backdrop-blur-2xl">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">History</p>
+              <h3 class="text-2xl font-semibold text-white">연대기</h3>
+              <p class="text-sm text-slate-200">British Invasion에서 오늘까지</p>
+            </header>
+            <div class="space-y-4 text-sm leading-relaxed text-slate-200">
+              <p>
+                1960년대 British Invasion이 미국 시장을 강타했고, 1970년대 펑크와 뉴웨이브가 대안을 제시했습니다. 1990년대엔
+                오아시스와 블러의 브릿팝 경쟁이 문화 현상을 만들었습니다.
+              </p>
+              <p>
+                2000년대 이후 애이미 와인하우스, 아델, 듀아 리파 등 보컬리스트와 전자음악 프로듀서들이 세계 차트를 이끌고 있습니다.
+              </p>
+            </div>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(2,6,23,0.6)] backdrop-blur-2xl">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Features</p>
+              <h3 class="text-2xl font-semibold text-white">특징</h3>
+              <p class="text-sm text-slate-200">언더그라운드 & 하이패션</p>
+            </header>
+            <ul class="space-y-4 text-sm text-slate-100">
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">언더그라운드 클럽에서의 사운드 테스트</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">패션·그래픽 디자인과의 협업 문화</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">BBC Radio·NME·Pitchfork 리뷰 생태계</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">싱어송라이터 전통과 문학적 가사</li>
+            </ul>
+          </article>
+        </section>
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="fade-in delay-2 rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_30px_70px_rgba(15,23,42,0.5)]">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Media</p>
+              <h3 class="text-2xl font-semibold text-white">미디어 & 패션</h3>
+            </header>
+            <p class="text-sm leading-relaxed text-slate-200">
+              런던 패션위크, 디자인 스튜디오, 뮤직비디오 컬렉티브가 함께 새로운 미학을 실험하며, 360° LED 스테이지 등 기술적 연출을
+              빠르게 도입합니다.
+            </p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+                <p class="text-xs uppercase tracking-widest text-blue-200">Showcase</p>
+                <p class="mt-2 font-semibold text-white">Glastonbury Stage</p>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+                <p class="text-xs uppercase tracking-widest text-blue-200">Style</p>
+                <p class="mt-2 font-semibold text-white">Mod · Punk · Avant</p>
+              </div>
+            </div>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_30px_70px_rgba(15,23,42,0.5)]">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Perspectives</p>
+              <h3 class="text-2xl font-semibold text-white">도전 과제</h3>
+            </header>
+            <p class="text-sm leading-relaxed text-slate-200">
+              브렉시트 이후 투어 비자, 라이브 클럽 생태계 지원, 다양성·포용성 강화를 위한 논의가 이어지고 있습니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">유럽 투어 행정 간소화</li>
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">라이브 하우스 보존 캠페인</li>
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">다문화 커뮤니티와의 협업</li>
+            </ul>
+          </article>
+        </section>
+        <footer class="fade-in delay-4 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center text-sm text-slate-200 backdrop-blur-2xl">
+          © 2025 Global Pop Guide · Discover diverse sounds worldwide.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+

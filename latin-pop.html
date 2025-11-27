@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>라틴 팝 소개</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                blue: "#1fb6ff",
+                indigo: "#1a1c4e",
+                glow: "#7edfff",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 30px, 0);
+        }
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeInUp 0.9s ease forwards;
+      }
+
+      .fade-in.delay-1 {
+        animation-delay: 0.15s;
+      }
+
+      .fade-in.delay-2 {
+        animation-delay: 0.3s;
+      }
+
+      .fade-in.delay-3 {
+        animation-delay: 0.45s;
+      }
+
+      .fade-in.delay-4 {
+        animation-delay: 0.6s;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[radial-gradient(circle_at_top,_#031a16,_#010807)] text-slate-100 antialiased">
+    <div class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-emerald-400/40 blur-3xl"></div>
+        <div class="absolute right-0 top-40 h-96 w-96 rounded-full bg-amber-400/30 blur-3xl"></div>
+        <div class="absolute inset-x-10 bottom-10 h-64 rounded-full bg-red-900/40 blur-3xl"></div>
+      </div>
+      <div class="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-12">
+        <nav class="fade-in mb-4 flex w-full flex-wrap items-center justify-between rounded-3xl border border-white/15 bg-white/5 px-6 py-4 text-sm font-medium text-slate-100 shadow-[0_15px_40px_rgba(2,6,23,0.4)] backdrop-blur-2xl">
+          <div class="flex items-center gap-2 text-xs uppercase tracking-[0.4em] text-blue-200">
+            <span class="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_15px_rgba(125,211,252,0.8)]"></span>
+            GLOBAL POP GUIDE
+          </div>
+          <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+            <a href="index.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">K-POP</a>
+            <a href="us-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">미국 팝</a>
+            <a href="uk-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">영국 팝</a>
+            <a href="jp-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">일본 팝</a>
+            <a href="latin-pop.html" class="rounded-full border border-white/40 bg-white/10 px-3 py-1 text-white shadow-inner">라틴 팝</a>
+          </div>
+        </nav>
+        <header class="fade-in mx-auto w-full max-w-4xl rounded-[32px] border border-white/20 bg-white/10 p-10 shadow-[0_20px_60px_rgba(15,23,42,0.45)] backdrop-blur-3xl">
+          <div class="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200">Latin Pop</p>
+              <h1 class="mt-3 text-4xl font-bold text-white sm:text-5xl">LATIN POP Spotlight</h1>
+              <p class="mt-3 text-base text-slate-200 sm:text-lg">
+                살사·레게톤·바차타 리듬이 뒤섞여 전 세계를 춤추게 하는 라틴 팝을 탐험합니다.
+              </p>
+            </div>
+            <figure class="flex flex-col items-center gap-3 rounded-3xl border border-white/30 bg-white/20 p-4 shadow-inner backdrop-blur-xl">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Latin_America.svg"
+                alt="라틴 아메리카 상징 깃발"
+                loading="lazy"
+                class="h-16 w-24 rounded-xl border border-white/50 bg-white object-cover shadow-lg"
+              />
+              <figcaption class="text-xs font-medium text-slate-100">Latin America</figcaption>
+            </figure>
+          </div>
+          <div class="mt-8 grid gap-4 text-sm text-slate-200 sm:grid-cols-3">
+            <div class="fade-in delay-1 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">핵심 키워드</p>
+              <p class="mt-2 text-lg font-semibold text-white">Rhythm & Passion</p>
+            </div>
+            <div class="fade-in delay-2 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">사운드</p>
+              <p class="mt-2 text-lg font-semibold text-white">Reggaeton · Bachata</p>
+            </div>
+            <div class="fade-in delay-3 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">플랫폼</p>
+              <p class="mt-2 text-lg font-semibold text-white">YouTube & Fiesta</p>
+            </div>
+          </div>
+        </header>
+        <section class="grid gap-8 lg:grid-cols-3">
+          <article class="fade-in delay-1 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(8,47,73,0.45)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-emerald-500/20 p-3 text-emerald-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 9l10.5-3M9 9v11.25m0-11.25L4.5 6.75m4.5 13.5L4.5 18V6.75m4.5 13.5l10.5-3V6l-10.5 3.75" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">루트 & 진화</h2>
+                <p class="text-sm text-slate-200">Bolero · Salsa · Reggaeton</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-slate-200">
+              쿠바·푸에르토리코의 살사, 도미니카 공화국의 바차타, 브라질의 삼바, 콜롬비아 쿠믹비아 등 카리브·남미 리듬이 현대 팝과
+              만나는 과정에서 라틴 팝이 탄생했습니다.
+            </p>
+          </article>
+          <article class="fade-in delay-2 rounded-[32px] border border-white/15 bg-gradient-to-br from-emerald-500/30 via-amber-500/20 to-rose-400/20 p-8 shadow-[0_30px_70px_rgba(14,116,144,0.5)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-white/20 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">핵심 요소</h2>
+                <p class="text-sm text-amber-100">Dance & Community</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-amber-50">
+              강렬한 리듬, 스페인어·포르투갈어 가사, 커뮤니티 파티 문화가 한데 어우러져 몰입감 있는 에너지를 전달합니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-white/90">
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">댄스 챌린지와 페스티벌 중심 프로모션</li>
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">미국·유럽 아티스트와 콜라보레이션</li>
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">라디오·클럽 DJ 네트워크</li>
+            </ul>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-amber-500/20 p-3 text-amber-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 5h12M9 3v2m9 4v12m0 0l-3-3m3 3l3-3M10 9a4 4 0 100 8 4 4 0 000-8z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">글로벌 영향력</h2>
+                <p class="text-sm text-slate-200">Billboard Latin · Streaming</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-slate-200">
+              YouTube 조회수, Spotify 글로벌 차트, 라틴 그래미가 라틴 팝의 국제적 위상을 견인하며, 스페인어 곡이 메인스트림을 장악하고
+              있습니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="rounded-2xl bg-white/5 p-3">Bad Bunny, Rosalía 등 글로벌 스타</li>
+              <li class="rounded-2xl bg-white/5 p-3">크로스오버 영어·스페인어 버전 발매</li>
+              <li class="rounded-2xl bg-white/5 p-3">카니발·페스티벌형 월드투어</li>
+            </ul>
+          </article>
+        </section>
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="fade-in delay-2 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(2,6,23,0.6)] backdrop-blur-2xl">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">History</p>
+              <h3 class="text-2xl font-semibold text-white">연대기</h3>
+              <p class="text-sm text-slate-200">카리브 루츠에서 글로벌까지</p>
+            </header>
+            <div class="space-y-4 text-sm leading-relaxed text-slate-200">
+              <p>
+                1950~70년대 볼레로·살사·부에나비스타 사운드가 라틴 음악의 뿌리를 만들었고, 1990년대 리키 마틴·샤키라가 팝 시장에
+                돌풍을 일으켰습니다.
+              </p>
+              <p>
+                2010년대 이후 레게톤, 트랩 라티노, 어반 라틴이 글로벌 차트를 점령하며 스페인어권 음악 소비를 대중화했습니다.
+              </p>
+            </div>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(2,6,23,0.6)] backdrop-blur-2xl">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Features</p>
+              <h3 class="text-2xl font-semibold text-white">특징</h3>
+              <p class="text-sm text-slate-200">리듬 & 커뮤니티</p>
+            </header>
+            <ul class="space-y-4 text-sm text-slate-100">
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">신체성을 강조하는 리듬과 베이스 라인</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">스페인어·포르투갈어 가사의 시적 표현</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">거리 축제, 카니발과 연계된 공연</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">DJ·댄서·퍼커션과의 협업 무대</li>
+            </ul>
+          </article>
+        </section>
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="fade-in delay-2 rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_30px_70px_rgba(15,23,42,0.5)]">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Media</p>
+              <h3 class="text-2xl font-semibold text-white">미디어 & 패션</h3>
+            </header>
+            <p class="text-sm leading-relaxed text-slate-200">
+              트로피컬 컬러의 의상, 라틴 스트리트웨어, 문화유산을 반영한 핸드메이드 악세서리가 무대를 수놓으며, 뮤직비디오는 각국의
+              풍경과 스트리트 댄스를 강조합니다.
+            </p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+                <p class="text-xs uppercase tracking-widest text-blue-200">Showcase</p>
+                <p class="mt-2 font-semibold text-white">Latin Grammy Stage</p>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+                <p class="text-xs uppercase tracking-widest text-blue-200">Style</p>
+                <p class="mt-2 font-semibold text-white">Tropical Futurism</p>
+              </div>
+            </div>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_30px_70px_rgba(15,23,42,0.5)]">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Perspectives</p>
+              <h3 class="text-2xl font-semibold text-white">도전 과제</h3>
+            </header>
+            <p class="text-sm leading-relaxed text-slate-200">
+              언어 장벽, 저작권 수익 배분, 현지 투어 인프라 등 현실적 과제가 존재하며, 다양한 지역의 문화적 뿌리를 존중하는 협업이
+              중요합니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">지역별 공연 인프라 확충</li>
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">스페인어·포르투갈어 교육형 콘텐츠</li>
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">공정한 스트리밍 수익 구조</li>
+            </ul>
+          </article>
+        </section>
+        <footer class="fade-in delay-4 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center text-sm text-slate-200 backdrop-blur-2xl">
+          © 2025 Global Pop Guide · Discover diverse sounds worldwide.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+

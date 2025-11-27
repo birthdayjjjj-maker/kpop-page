@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미국 팝 소개</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                blue: "#1fb6ff",
+                indigo: "#1a1c4e",
+                glow: "#7edfff",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 30px, 0);
+        }
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeInUp 0.9s ease forwards;
+      }
+
+      .fade-in.delay-1 {
+        animation-delay: 0.15s;
+      }
+
+      .fade-in.delay-2 {
+        animation-delay: 0.3s;
+      }
+
+      .fade-in.delay-3 {
+        animation-delay: 0.45s;
+      }
+
+      .fade-in.delay-4 {
+        animation-delay: 0.6s;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[radial-gradient(circle_at_top,_#020617,_#000000)] text-slate-100 antialiased">
+    <div class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-blue-500/40 blur-3xl"></div>
+        <div class="absolute right-0 top-40 h-96 w-96 rounded-full bg-red-400/30 blur-3xl"></div>
+        <div class="absolute inset-x-10 bottom-10 h-64 rounded-full bg-indigo-900/40 blur-3xl"></div>
+      </div>
+      <div class="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-12">
+        <nav class="fade-in mb-4 flex w-full flex-wrap items-center justify-between rounded-3xl border border-white/15 bg-white/5 px-6 py-4 text-sm font-medium text-slate-100 shadow-[0_15px_40px_rgba(2,6,23,0.4)] backdrop-blur-2xl">
+          <div class="flex items-center gap-2 text-xs uppercase tracking-[0.4em] text-blue-200">
+            <span class="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_15px_rgba(125,211,252,0.8)]"></span>
+            GLOBAL POP GUIDE
+          </div>
+          <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+            <a href="index.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">K-POP</a>
+            <a href="us-pop.html" class="rounded-full border border-white/40 bg-white/10 px-3 py-1 text-white shadow-inner">미국 팝</a>
+            <a href="uk-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">영국 팝</a>
+            <a href="jp-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">일본 팝</a>
+            <a href="latin-pop.html" class="rounded-full border border-transparent px-3 py-1 transition hover:border-white/40 hover:bg-white/10">라틴 팝</a>
+          </div>
+        </nav>
+        <header class="fade-in mx-auto w-full max-w-4xl rounded-[32px] border border-white/20 bg-white/10 p-10 shadow-[0_20px_60px_rgba(15,23,42,0.45)] backdrop-blur-3xl">
+          <div class="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-sky-200">American Pop</p>
+              <h1 class="mt-3 text-4xl font-bold text-white sm:text-5xl">US POP Spotlight</h1>
+              <p class="mt-3 text-base text-slate-200 sm:text-lg">
+                재즈와 블루스에서 태어나 스트리밍 시대를 선도하는 미국 팝의 진화를 소개합니다.
+              </p>
+            </div>
+            <figure class="flex flex-col items-center gap-3 rounded-3xl border border-white/30 bg-white/20 p-4 shadow-inner backdrop-blur-xl">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                alt="미국 국기"
+                loading="lazy"
+                class="h-16 w-24 rounded-xl border border-white/50 bg-white object-cover shadow-lg"
+              />
+              <figcaption class="text-xs font-medium text-slate-100">United States</figcaption>
+            </figure>
+          </div>
+          <div class="mt-8 grid gap-4 text-sm text-slate-200 sm:grid-cols-3">
+            <div class="fade-in delay-1 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">핵심 키워드</p>
+              <p class="mt-2 text-lg font-semibold text-white">Billboard Power</p>
+            </div>
+            <div class="fade-in delay-2 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">사운드</p>
+              <p class="mt-2 text-lg font-semibold text-white">R&B · Hip-hop · Pop</p>
+            </div>
+            <div class="fade-in delay-3 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
+              <p class="text-xs uppercase tracking-widest text-blue-200">플랫폼</p>
+              <p class="mt-2 text-lg font-semibold text-white">Streaming & Festival</p>
+            </div>
+          </div>
+        </header>
+        <section class="grid gap-8 lg:grid-cols-3">
+          <article class="fade-in delay-1 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(8,47,73,0.45)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-blue-500/20 p-3 text-sky-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 9l10.5-3M9 9v11.25m0-11.25L4.5 6.75m4.5 13.5L4.5 18V6.75m4.5 13.5l10.5-3V6l-10.5 3.75" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">루트 & 진화</h2>
+                <p class="text-sm text-slate-200">Jazz · Motown · Rock</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-slate-200">
+              재즈와 블루스, 소울, Motown 사운드를 거쳐 팝록, 디스코, 현대 R&B로 진화를 거듭했습니다. 시대마다 사회적 메시지와
+              청년 문화가 음악에 녹아들며 새로운 장르를 만들어냈습니다.
+            </p>
+          </article>
+          <article class="fade-in delay-2 rounded-[32px] border border-white/15 bg-gradient-to-br from-indigo-500/30 via-blue-500/20 to-rose-400/20 p-8 shadow-[0_30px_70px_rgba(14,116,144,0.5)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-white/20 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">핵심 요소</h2>
+                <p class="text-sm text-rose-100">Performance & Diversity</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-rose-50">
+              대형 페스티벌, 슈퍼볼 하프타임 쇼, 그래미 시상식 무대가 음악·패션·테크놀로지를 결합한 쇼케이스를 선보입니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-white/90">
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">다문화 아티스트와 장르 믹스</li>
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">프로듀서 중심 송라이팅 캠프</li>
+              <li class="rounded-2xl border border-white/20 bg-white/10 p-3">티크톡·릴스 기반 바이럴 전략</li>
+            </ul>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
+            <div class="flex items-center gap-3">
+              <div class="rounded-2xl bg-sky-500/20 p-3 text-sky-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 5h12M9 3v2m9 4v12m0 0l-3-3m3 3l3-3M10 9a4 4 0 100 8 4 4 0 000-8z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-white">글로벌 영향력</h2>
+                <p class="text-sm text-slate-200">Streaming Era</p>
+              </div>
+            </div>
+            <p class="mt-5 text-sm leading-relaxed text-slate-200">
+              빌보드 차트, Spotify·Apple Music 플레이리스트, 영화·드라마 OST 연계로 전 세계 팝 시장의 표준을 제시합니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="rounded-2xl bg-white/5 p-3">세계 최대 규모의 투어와 레지던시 쇼</li>
+              <li class="rounded-2xl bg-white/5 p-3">그래미·AMA 등 시상식이 만든 레퍼런스</li>
+              <li class="rounded-2xl bg-white/5 p-3">할리우드와 결합한 드라마틱 스토리텔링</li>
+            </ul>
+          </article>
+        </section>
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="fade-in delay-2 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(2,6,23,0.6)] backdrop-blur-2xl">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">History</p>
+              <h3 class="text-2xl font-semibold text-white">연대기</h3>
+              <p class="text-sm text-slate-200">Tin Pan Alley부터 스트리밍까지</p>
+            </header>
+            <div class="space-y-4 text-sm leading-relaxed text-slate-200">
+              <p>
+                20세기 초 Tin Pan Alley 송라이팅과 빅밴드가 대중음악 산업을 열었고, 1950~60년대에는 엘비스·비틀즈 열풍과 함께
+                록앤롤이 주류로 떠올랐습니다.
+              </p>
+              <p>
+                1980년대 MTV와 마이클 잭슨, 마돈나가 시각적 퍼포먼스를 강조했고, 2000년대 이후 힙합과 R&B, EDM이 팝과 결합해
+                멀티 장르 사운드를 완성했습니다.
+              </p>
+            </div>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/15 bg-white/10 p-8 shadow-[0_30px_70px_rgba(2,6,23,0.6)] backdrop-blur-2xl">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Features</p>
+              <h3 class="text-2xl font-semibold text-white">특징</h3>
+              <p class="text-sm text-slate-200">스토리, 프로덕션, 팬덤</p>
+            </header>
+            <ul class="space-y-4 text-sm text-slate-100">
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">A&R 주도의 체계적 프로덕션 파이프라인</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">뮤직비디오·라이브·다큐 콘텐츠 연계</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">팬 주도 플레이리스트와 소셜 챌린지</li>
+              <li class="rounded-3xl border border-white/15 bg-white/5 p-4">음악·영화·게임 IP 간 크로스오버</li>
+            </ul>
+          </article>
+        </section>
+        <section class="grid gap-8 lg:grid-cols-2">
+          <article class="fade-in delay-2 rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_30px_70px_rgba(15,23,42,0.5)]">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Media</p>
+              <h3 class="text-2xl font-semibold text-white">미디어 & 패션</h3>
+            </header>
+            <p class="text-sm leading-relaxed text-slate-200">
+              레드카펫 패션과 스트리트웨어, 디지털 아바타 의상이 혼재하며, 슈퍼볼·코첼라·SXSW 등 대형 이벤트가 새로운 무대 기술을
+              실험합니다.
+            </p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+                <p class="text-xs uppercase tracking-widest text-blue-200">Showcase</p>
+                <p class="mt-2 font-semibold text-white">Super Bowl Stage</p>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+                <p class="text-xs uppercase tracking-widest text-blue-200">Style</p>
+                <p class="mt-2 font-semibold text-white">Street & Luxury Mix</p>
+              </div>
+            </div>
+          </article>
+          <article class="fade-in delay-3 rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_30px_70px_rgba(15,23,42,0.5)]">
+            <header class="mb-6 flex flex-col gap-1">
+              <p class="text-xs uppercase tracking-[0.35em] text-sky-200">Perspectives</p>
+              <h3 class="text-2xl font-semibold text-white">도전 과제</h3>
+            </header>
+            <p class="text-sm leading-relaxed text-slate-200">
+              상업성과 예술성의 균형, 저작권·AI 음원 확산, 투어 비용 상승 등 다양한 화두가 논의되고 있습니다. 지속 가능한 제작 환경과
+              다양성 존중이 핵심 주제로 다뤄집니다.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">AI 합성 보컬과 저작권 규범</li>
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">아티스트 정신 건강과 휴식권</li>
+              <li class="rounded-2xl border border-white/15 bg-white/5 p-4">친환경 투어·공연 인프라 전환</li>
+            </ul>
+          </article>
+        </section>
+        <footer class="fade-in delay-4 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center text-sm text-slate-200 backdrop-blur-2xl">
+          © 2025 Global Pop Guide · Discover diverse sounds worldwide.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
